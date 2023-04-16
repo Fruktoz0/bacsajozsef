@@ -1,0 +1,61 @@
+@import "/src/sass/variables";
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        max-width: 100%;
+        min-height: initial !important;
+        max-width: initial !important;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 10px;
+    }
+
+    .nav-link {
+        margin-top: 0px;
+    }
+
+    .line {
+        display: none;
+    }
+
+
+}
+
+.navbar {
+    background-color: $yellowColor;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 40vh;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+.nav-link {
+    margin-top: -5px;
+    margin-bottom: -5px;
+    font-weight: bolder;
+    color: black;
+}
+
+.line {
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+.nav-item.active a {
+    color: #fff;
+}
+
+.name {
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $yellowColor;
+}

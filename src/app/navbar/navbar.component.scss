@@ -1,0 +1,33 @@
+@import "/src/sass/variables";
+
+.navbar {
+    background-color: $yellowColor;
+    width: 34px;
+    border-radius: 30px;
+
+}
+
+.nav-link {
+    color: black;
+}
+
+.line {
+    margin: -5px 0px -5px 0px;
+    font-size: 10px;
+}
+
+a:hover {
+    color: white;
+}
+
+.nav-item.active a {
+    color: #fff;
+  }
+
+.nav-item:hover svg path {
+    fill: white;
+}
+
+.nav-item.active .nav-link svg path {
+    fill: #fff;
+  }

@@ -1,0 +1,40 @@
+@import "/src/sass/variables";
+
+.container{
+    padding: 0px 30% 0px 15%;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h4{
+    font-weight: bold;
+}
+
+img{
+    height: 100vh;
+    object-fit: cover;
+}
+
+.frontend{
+    font-weight: bold;
+    background-color: $yellowColor;
+    padding: 0px 5px 0px 5px;
+}
+
+.jozsef{
+    color: $yellowColor;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.aboutMe{
+    border: none;
+    border-radius: 20px;
+    background-color: $yellowColor;
+    padding: 10px;
+    font-weight: 600;
+    text-decoration: none;
+
+}
