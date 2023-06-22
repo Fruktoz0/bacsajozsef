@@ -14,6 +14,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './home/home.component';
 import { Nav1Component } from './nav1/nav1.component';
 import { FormsModule } from '@angular/forms';
+import { FlipCardModule } from './flip-card/flip-card.module';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    FlipCardModule,
     FormsModule
   ],
   providers: [],

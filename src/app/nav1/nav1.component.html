@@ -1,47 +1,49 @@
+<nav class="navbar navbar-expand-md bg-body-tertiary flex-column py-0">
+    <img name="profile" src="assets/img/profile.png" alt="kep1" class="img-fluid d-none d-md-block">
+    <div class="container-fluid d-flex align-items-center">
+        <img class="navbar-brand d-md-none logo" src="assets/img/logo.jpg" href="#">
+       <!--  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> 
+-->
+        <div id="menu_button">
+            <input type="checkbox" id="menu_checkbox">
+            <label for="menu_checkbox" id="menu_label">
+                <div id="menu_text_bar"></div>
+            </label>
+        </div>
 
-    <nav class="navbar navbar-expand-md bg-body-tertiary flex-column py-0">
-            <img src="assets/img/kep1.jpg" alt="kep1" class="img-fluid d-none d-md-block">
-            <div class="container-fluid">
-            <a class="navbar-brand d-md-none name" href="#">@Bacsa József</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                </div>
-        
-          <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav flex-column text-center">
-               
-                    <a class="nav-link"  routerLink="main">Home</a>
-                    <a class="line">|</a>
-                    <li class="nav-item" routerLinkActive="active">
-                        <a class="nav-link" routerLinkActive="active" routerLink="/home/aboutme">ABOUT ME</a>
-                    </li>
-                    
-                    <a class="line">|</a>
-                    <li class="nav-item" routerLinkActive="active">
-                        <a class="nav-link" routerLink="/home/resume">RESUME</a>
-                    </li>
-                    <a class="line" routerLink="main">|</a>
-                    <li class="nav-item" routerLinkActive="active">
-                        <a class="nav-link" routerLink="/home/portfolio">PORTFOLIO</a>
-                    </li>
-                    <a class="line">|</a>
-                    <li class="nav-item" routerLinkActive="active">
-                        <a class="nav-link" routerLink="/home/testimonials">TESTIMONIALS</a>
-                    </li>
-                    <a class="line" routerLink="main">|</a>
-                    <li class="nav-item" routerLinkActive="active">
-                        <a class="nav-link" routerLink="/home/contact">CONTACT</a>
-                    </li>
-                    
-                
-            
-            </div>
-          </div>
-      </nav>
-    
+    </div>
 
- 
+    <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav flex-column text-center">
 
- 
+            <a class="nav-link" routerLink="main">Home</a>
+            <a class="line">|</a>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLinkActive="active" routerLink="/home/aboutme">ABOUT ME</a>
+            </li>
 
+            <a class="line">|</a>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/home/resume">RESUME</a>
+            </li>
+            <a class="line" routerLink="main">|</a>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/home/portfolio">PORTFOLIO</a>
+            </li>
+            <a class="line">|</a>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/home/testimonials">TESTIMONIALS</a>
+            </li>
+            <a class="line" routerLink="main">|</a>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/home/contact">CONTACT</a>
+            </li>
+
+
+
+        </div>
+    </div>
+</nav>

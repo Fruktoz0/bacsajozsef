@@ -1,3 +1,8 @@
+@media only screen and (min-width: 568px) and (max-width: 1680px) {
+  .container-fluid {
+    padding-right: 60px;
+  }
+}
 .title {
   font-size: 20px;
 }
@@ -9,4 +14,8 @@
 h1 {
   font-size: 55px;
   font-weight: bold;
+}
+
+fa-icon {
+  font-size: 70px;
 }/*# sourceMappingURL=aboutme.component.css.map */
