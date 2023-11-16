@@ -1,49 +1,92 @@
 <nav class="navbar navbar-expand-md bg-body-tertiary flex-column py-0">
-    <img name="profile" src="assets/img/profile.png" alt="kep1" class="img-fluid d-none d-md-block">
-    <div class="container-fluid d-flex align-items-center">
-        <img class="navbar-brand d-md-none logo" src="assets/img/logo.jpg" href="#">
-       <!--  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> 
--->
-        <div id="menu_button">
-            <input type="checkbox" id="menu_checkbox">
-            <label for="menu_checkbox" id="menu_label">
-                <div id="menu_text_bar"></div>
-            </label>
-        </div>
+  <img
+    name="profile"
+    src="assets/img/profile.png"
+    alt="kep1"
+    class="img-fluid d-none d-md-block"
+  />
+  <div class="container-fluid">
+    <img
+      class="navbar-brand d-md-none logo"
+      src="assets/img/logo.jpg"
+      href="#"
+    />
 
+    <div
+      class="menu-btn d-md-none"
+      [ngClass]="{ open: menuOpen }"
+      (click)="toggleMenu()"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <div class="menu-btn__burger"></div>
     </div>
 
-    <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavAltMarkup">
-        <div class="navbar-nav flex-column text-center">
 
-            <a class="nav-link" routerLink="main">Home</a>
-            <a class="line">|</a>
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" routerLinkActive="active" routerLink="/home/aboutme">ABOUT ME</a>
-            </li>
+  </div>
 
-            <a class="line">|</a>
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" routerLink="/home/resume">RESUME</a>
-            </li>
-            <a class="line" routerLink="main">|</a>
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" routerLink="/home/portfolio">PORTFOLIO</a>
-            </li>
-            <a class="line">|</a>
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" routerLink="/home/testimonials">TESTIMONIALS</a>
-            </li>
-            <a class="line" routerLink="main">|</a>
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" routerLink="/home/contact">CONTACT</a>
-            </li>
+  <div id="navbarNavDropdown" class=" collaps navbar-collapse">
+    <div class="navbar-nav ">
+      <ul class="d-flex flex-column">
+        <li class="firstDot text-center">
+          <a class="dot"><i class="bi bi-dot"></i></a>
+        </li>
+        <li class="nav-item text-center">
+          <a class="line"><i class="bi bi-three-dots-vertical"></i></a>
+        </li>
+        <li class="nav-item text-center" routerLinkActive="active">
+          <a class="nav-link" routerLink="main">Home</a>
+        </li>
+        <li class="text-center">
+          <a class="line"><i class="bi bi-three-dots-vertical"></i></a>
+        </li>
+        <li class="nav-item text-center" routerLinkActive="active">
+          <a
+            class="nav-link"
+            routerLinkActive="active"
+            routerLink="/home/aboutme"
+            >ABOUT ME</a
+          >
+        </li>
+        <li class="text-center">
+          <a class="line"><i class="bi bi-three-dots-vertical"></i></a>
+        </li>
 
-
-
-        </div>
+        <li class="nav-item text-center" routerLinkActive="active">
+          <a class="nav-link" routerLink="/home/resume">RESUME</a>
+        </li>
+        <li class="text-center">
+          <a class="line" routerLink="main"
+            ><i class="bi bi-three-dots-vertical"></i
+          ></a>
+        </li>
+        <li class="nav-item text-center" routerLinkActive="active">
+          <a class="nav-link" routerLink="/home/portfolio">PORTFOLIO</a>
+        </li>
+        <li class="text-center">
+          <a class="line"><i class="bi bi-three-dots-vertical"></i></a>
+        </li>
+        <li class="nav-item text-center" routerLinkActive="active">
+          <a class="nav-link" routerLink="/home/testimonials">TESTIMONIALS</a>
+        </li>
+        <li class="text-center">
+          <a class="line" routerLink="main"
+            ><i class="bi bi-three-dots-vertical"></i
+          ></a>
+        </li>
+        <li class="nav-item text-center" routerLinkActive="active">
+          <a class="nav-link" routerLink="/home/contact">CONTACT</a>
+        </li>
+        <li class="text-center">
+          <a class="line"><i class="bi bi-three-dots-vertical"></i></a>
+        </li>
+        <li class="lastDot text-center">
+          <a class="dot"><i class="bi bi-dot"></i></a>
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>

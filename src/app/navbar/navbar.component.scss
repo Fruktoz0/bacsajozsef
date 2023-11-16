@@ -18,6 +18,8 @@
 
 a:hover {
     color: white;
+    transform: translateY(-5px);
+    transition: all .4s;
 }
 
 .nav-item.active a {
