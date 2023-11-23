@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bacsajozsef-a6ee8": {
+      "hosting": {
+        "bacsajozsef": [
+          "bacsajozsef-a6ee8"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "bacsajozsef-a6ee8"
+  }
+}

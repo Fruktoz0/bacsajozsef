@@ -4,32 +4,34 @@
     background-color: $yellowColor;
     width: 34px;
     border-radius: 30px;
-
-}
-
-.nav-link {
-    color: black;
-}
-
-.line {
-    margin: -5px 0px -5px 0px;
-    font-size: 10px;
-}
-
-a:hover {
-    color: white;
-    transform: translateY(-5px);
-    transition: all .4s;
-}
-
-.nav-item.active a {
-    color: #fff;
+    .nav-link {
+      color: black;
   }
 
-.nav-item:hover svg path {
-    fill: white;
+  .line {
+      margin: -5px 0px -5px 0px;
+      font-size: 10px;
+  }
+
+  a:hover {
+      color: white;
+      transform: translateY(-5px);
+      transition: all .4s;
+  }
+
+  .nav-item.active a {
+      color: #fff;
+    }
+
+  .nav-item:hover svg path {
+      fill: white;
+  }
+
+  .nav-item.active .nav-link svg path {
+      fill: #fff;
+    }
+
+
+
 }
 
-.nav-item.active .nav-link svg path {
-    fill: #fff;
-  }

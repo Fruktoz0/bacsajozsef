@@ -8,10 +8,12 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { HomeComponent } from './home/home.component';
 import { Nav1Component } from './nav1/nav1.component';
+import { UnderconstructionComponent } from './underconstruction/underconstruction.component';
 
 const routes: Routes = [
-  
+
   {path: '', redirectTo: 'main', pathMatch: 'full'},
+  // {path: 'underconstruction',  component: UnderconstructionComponent},
   {path: 'main', component: MainComponent},
   { path: 'home', component: HomeComponent, children: [
     { path: '', redirectTo: 'portfolio', pathMatch: 'full' },

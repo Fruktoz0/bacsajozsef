@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "target": "bacsajozsef",
+    "public": "dist/bacsajozsef",
+    "ignore": [
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
